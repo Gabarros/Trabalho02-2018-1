@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Trabalho2</string>
+    <string name="etnome" />
+    <string name="etnomemae" />
+    <string name="etdata" />
+    <string name="etnumero" />
+    <string name="etzona" />
+    <string name="etsecao" />
+    <string name="etmunicipio" />
+    <string name="btsalvareleitor">SALVAR</string>
+    <string name="btalterareleitor">ALTERAR</string>
+    <string name="btapagareleitor">APAGAR</string>
+    <string name="nomeeleitor" />
+    <string name="nomemaeeleitor" />
+    <string name="numeroeleitor" />
+    <string name="secaoeleitor" />
+    <string name="zonaeleitor" />
+    <string name="tvdados">Gabriel de Almeida Barros - V 1.0</string>
+    <string name="title_activity_lista_evento">title_activity_lista_evento</string>
+    <string name="etmunicipioeleitor" />
+</resources>
