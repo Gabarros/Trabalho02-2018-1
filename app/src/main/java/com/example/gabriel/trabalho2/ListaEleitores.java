@@ -1,6 +1,7 @@
 package com.example.gabriel.trabalho2;
 
 import android.content.Intent;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
@@ -28,7 +29,7 @@ public class ListaEleitores extends AppCompatActivity implements ClickRecyclerVi
         setSupportActionBar(toolbar);
 
         realm = Realm.getDefaultInstance();
-        Button fab = (Button) findViewById(R.id.fab);
+        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -39,6 +40,7 @@ public class ListaEleitores extends AppCompatActivity implements ClickRecyclerVi
 
         });
     }
+
 
 
     protected void onResume() {

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Trabalho2</string>
+    <string name="app_name">Cadastro de Eleitores e Candidatos</string>
     <string name="etnome" />
     <string name="etnomemae" />
     <string name="etdata" />
@@ -22,7 +22,8 @@
     <string name="maeeleitorhint">Nome da Mãe</string>
     <string name="dataeleitorhint">DD/MM/YYYY</string>
     <string name="tituloeleitorhint">Número do Título</string>
-    <string name="zonaeleitorhint">Zona Eleitoral</string>
-    <string name="secaoeleitoralhint">Seção Eleitoral</string>
-    <string name="municipioeleitorhint">Munício de Origem</string>
+    <string name="zonaeleitorhint">Zona</string>
+    <string name="secaoeleitoralhint">Seção</string>
+    <string name="municipioeleitorhint">Munícipio de Origem</string>
+    <string name="botaoaddeleitor">Adicionar Novo Eleitor</string>
 </resources>
