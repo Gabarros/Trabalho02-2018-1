@@ -14,6 +14,8 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
+import com.example.gabriel.trabalho2.R;
+
 import io.realm.Realm;
 import model.Eleitor;
 
@@ -62,9 +64,9 @@ public class EleitorDetalhe extends AppCompatActivity {
             etNome.setText(eleitor.getNome());
             etNomeMae.setText(eleitor.getNomemae());
             etData.setText(formato.format((Date) eleitor.getDatanascimento()));
-            etNumeroTitulo.setText(eleitor.getNumerotitulo());
-            etZona.setText(eleitor.getZona());
-            etSecao.setText(eleitor.getSecao());
+            etNumeroTitulo.setText(Integer.parseInt(String.valueOf(eleitor.getNumerotitulo())));
+            etZona.setText(Integer.parseInt(String.valueOf(eleitor.getZona())));
+            etSecao.setText(Integer.parseInt(String.valueOf(eleitor.getSecao())));
             etMunicipio.setText(eleitor.getMunicipio());
 
         }else{
@@ -136,6 +138,7 @@ public class EleitorDetalhe extends AppCompatActivity {
         eleitor.setZona(Integer.parseInt(etZona.getText().toString()));
         eleitor.setSecao(Integer.parseInt(etSecao.getText().toString()));
         eleitor.setMunicipio(etMunicipio.getText().toString());
+
 
         try {
             eleitor.setDatanascimento((Date) formato.parse(etData.getText().toString()));

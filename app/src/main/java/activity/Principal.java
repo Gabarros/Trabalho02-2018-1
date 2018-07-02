@@ -22,10 +22,14 @@ public class Principal extends AppCompatActivity implements AdapterView.OnItemCl
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_principal);
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, itemMenu);
+        ArrayAdapter<String> adapter2 = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_2, itemMenu2);
 
         ListView listView = (ListView) findViewById(R.id.listaMenu);
         listView.setAdapter(adapter);
         listView.setOnItemClickListener(this);
+
+
+
     }
 
     @Override

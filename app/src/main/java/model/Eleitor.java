@@ -6,7 +6,13 @@ import java.util.Date;
 import io.realm.RealmObject;
 import io.realm.annotations.PrimaryKey;
 
+
+
+import com.example.gabriel.trabalho2.R;
+
 public class Eleitor extends RealmObject implements Serializable {
+
+
 
     @PrimaryKey
     private int id;
@@ -18,7 +24,16 @@ public class Eleitor extends RealmObject implements Serializable {
     private int secao;
     private String municipio;
 
+
     public Eleitor(){
+
+    }
+    public Eleitor(int id, String nome, int numerotitulo, int zona, int secao){
+        this.id = id;
+        this.nome = nome;
+        this.numerotitulo = numerotitulo;
+        this.zona = zona;
+        this.secao = secao;
 
     }
 
