@@ -49,9 +49,7 @@ public class EleitorDetalhe extends AppCompatActivity {
         btalterar = (Button) findViewById(R.id.bt_alterar_eleitor);
         btdeletar = (Button) findViewById(R.id.bt_deletar_eleitor);
 
-        Intent intent = getIntent();
-        id = (int) intent.getSerializableExtra("id");
-        realm = Realm.getDefaultInstance();
+
 
         if (id !=0) {
             btsalvar.setEnabled(false);
