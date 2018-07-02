@@ -110,7 +110,24 @@ public class CandidatoDetalhe extends AppCompatActivity {
         this.finish();
 
     }
-   
+    public void salvar() {
+        int proximoID = 1;
+        if(realm.where(Candidato.class).max("id") !=null)
+            proximoID = realm.where(Candidato.class).max("id").intValue()+1;
+
+        realm.beginTransaction();
+        Candidato candidato = new Candidato();
+        candidato.setId(proximoID);
+        setEGrava(candidato);
+
+        realm.copyToRealm(candidato);
+        realm.commitTransaction();
+        realm.close();
+
+        Toast.makeText(this,"Novo Candidato Cadastrado",Toast.LENGTH_LONG).show();
+        this.finish();
+
+    }
 
     private void setEGrava(Candidato candidato){
 
