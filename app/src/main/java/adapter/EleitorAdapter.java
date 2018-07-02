@@ -23,7 +23,7 @@ public class EleitorAdapter extends RecyclerView.Adapter {
     private static ClickRecyclerViewListener clickRecyclerViewListener;
 
     public EleitorAdapter(List<Eleitor> eleitores, Context context, ClickRecyclerViewListener clickRecyclerViewListener) {
-        this.setEleitores(eleitores);
+        this.eleitores = eleitores;
         this.context = context;
         this.clickRecyclerViewListener = clickRecyclerViewListener;
     }
@@ -42,7 +42,8 @@ public class EleitorAdapter extends RecyclerView.Adapter {
 
         EleitorViewHolder eleitorHolder = (EleitorViewHolder) viewHolder;
 
-        Eleitor eleitor  = this.getEleitores().get(position) ;
+        Eleitor eleitor  = this.eleitores.get(position);
+        SimpleDateFormat formato = new SimpleDateFormat("dd/MM/yyyy");
 
 
         eleitorHolder.nomeEleitor.setText(eleitor.getNome());
@@ -55,16 +56,9 @@ public class EleitorAdapter extends RecyclerView.Adapter {
 
     @Override
     public int getItemCount() {
-        return getEleitores().size();
+        return eleitores.size();
     }
 
-    public List<Eleitor> getEleitores() {
-        return eleitores;
-    }
-
-    public void setEleitores(List<Eleitor> eleitores) {
-        this.eleitores = eleitores;
-    }
 
     public class EleitorViewHolder extends RecyclerView.ViewHolder {
 
@@ -84,7 +78,7 @@ public class EleitorAdapter extends RecyclerView.Adapter {
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    clickRecyclerViewListener.onClick(getEleitores().get(getLayoutPosition()));
+                    clickRecyclerViewListener.onClick(eleitores.get(getLayoutPosition()));
 
                 }
             });

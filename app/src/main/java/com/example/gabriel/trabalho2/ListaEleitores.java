@@ -63,7 +63,7 @@ public class ListaEleitores extends AppCompatActivity implements ClickRecyclerVi
     @Override
     public void onClick(Object object) {
        Eleitor eleitor = (Eleitor) object;
-        Intent intent = new Intent(ListaEleitores.this,EleitorDetalhe.class);
+        Intent intent = new Intent(ListaEleitores.this, EleitorDetalhe.class);
         intent.putExtra("id",eleitor.getId());
         startActivity(intent);
     }
