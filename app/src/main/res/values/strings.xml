@@ -18,4 +18,11 @@
     <string name="tvdados">Gabriel de Almeida Barros - V 1.0</string>
     <string name="title_activity_lista_evento">title_activity_lista_evento</string>
     <string name="etmunicipioeleitor" />
+    <string name="nomeeleitorhint">Nome do Eleitor</string>
+    <string name="maeeleitorhint">Nome da Mãe</string>
+    <string name="dataeleitorhint">DD/MM/YYYY</string>
+    <string name="tituloeleitorhint">Número do Título</string>
+    <string name="zonaeleitorhint">Zona Eleitoral</string>
+    <string name="secaoeleitoralhint">Seção Eleitoral</string>
+    <string name="municipioeleitorhint">Munício de Origem</string>
 </resources>
