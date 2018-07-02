@@ -35,7 +35,7 @@ public class Principal extends AppCompatActivity implements AdapterView.OnItemCl
 
         try {
 
-            Class obj = Class.forName ("com.example.gabriel.trabalho2.activity."+activities[position]);
+            Class obj = Class.forName ("com.example.gabriel.trabalho2."+activities[position]);
             intent = new Intent(this, obj);
 
         } catch (ClassNotFoundException e) {
