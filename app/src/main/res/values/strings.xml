@@ -31,5 +31,8 @@
     <string name="tvzonaeleitor">Zona:</string>
     <string name="etestado" />
     <string name="etestado2">Eatado</string>
-    <string name="etestado" />
+    <string name="tvnomecandidato" />
+    <string name="tvpartidocandidato" />
+    <string name="tvnumerocandidato" />
+    <string name="tvcargocandidato" />
 </resources>
