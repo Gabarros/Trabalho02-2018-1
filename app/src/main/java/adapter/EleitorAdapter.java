@@ -56,6 +56,7 @@ public class EleitorAdapter extends RecyclerView.Adapter {
 
     @Override
     public int getItemCount() {
+
         return eleitores.size();
     }
 
@@ -71,6 +72,7 @@ public class EleitorAdapter extends RecyclerView.Adapter {
         public EleitorViewHolder(View itemView) {
             super(itemView);
             nomeEleitor = (TextView) itemView.findViewById(R.id.tvNomeEleitor);
+
             numeroEleitor = (TextView) itemView.findViewById(R.id.tvNumeroEleitor);
             zonaEleitor = (TextView) itemView.findViewById(R.id.tvZonaEleitor);
             secaoEleitor = (TextView) itemView.findViewById(R.id.tvSecaoEleitor);

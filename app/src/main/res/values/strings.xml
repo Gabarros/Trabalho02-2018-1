@@ -16,7 +16,7 @@
     <string name="secaoeleitor" />
     <string name="zonaeleitor" />
     <string name="tvdados">Gabriel de Almeida Barros - V 1.0</string>
-    <string name="title_activity_lista_evento">title_activity_lista_evento</string>
+    <string name="title_activity_lista_evento">Lista de Eleitores</string>
     <string name="etmunicipioeleitor" />
     <string name="nomeeleitorhint">Nome do Eleitor</string>
     <string name="maeeleitorhint">Nome da Mãe</string>
@@ -26,4 +26,8 @@
     <string name="secaoeleitoralhint">Seção</string>
     <string name="municipioeleitorhint">Munícipio de Origem</string>
     <string name="botaoaddeleitor">Adicionar Novo Eleitor</string>
+    <string name="tvnomeeleitor">Nome:</string>
+    <string name="tvnumeroeleitor">Número do Título:</string>
+    <string name="tvsecaoeleitoral">Seção:</string>
+    <string name="tvzonaeleitor">Zona:</string>
 </resources>
