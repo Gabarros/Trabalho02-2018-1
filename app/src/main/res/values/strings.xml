@@ -25,9 +25,11 @@
     <string name="zonaeleitorhint">Zona</string>
     <string name="secaoeleitoralhint">Seção</string>
     <string name="municipioeleitorhint">Munícipio de Origem</string>
-    <string name="botaoaddeleitor">Adicionar Novo Eleitor</string>
     <string name="tvnomeeleitor">Nome:</string>
     <string name="tvnumeroeleitor">Número do Título:</string>
     <string name="tvsecaoeleitoral">Seção:</string>
     <string name="tvzonaeleitor">Zona:</string>
+    <string name="etestado" />
+    <string name="etestado2">Eatado</string>
+    <string name="etestado" />
 </resources>

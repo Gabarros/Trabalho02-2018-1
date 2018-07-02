@@ -1,4 +1,4 @@
-package activity;
+package com.example.gabriel.trabalho2;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
@@ -14,21 +14,19 @@ import com.example.gabriel.trabalho2.R;
 public class Principal extends AppCompatActivity implements AdapterView.OnItemClickListener{
 
     private String[] activities = {"ListaEleitores"};
-    private String[] itemMenu = {"Adicionar Eleitor"};
-    private String[] itemMenu2 = {"Adicionar Candidato"};
+    private String[] itemMenu = {"Adicionar Eleitor", "Adicionar Candidato"};
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_principal);
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, itemMenu);
-        ArrayAdapter<String> adapter2 = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_2, itemMenu2);
+
 
         ListView listView = (ListView) findViewById(R.id.listaMenu);
         listView.setAdapter(adapter);
         listView.setOnItemClickListener(this);
-
-
 
     }
 

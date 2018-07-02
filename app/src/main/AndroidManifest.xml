@@ -10,7 +10,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="activity.Principal">
+        <activity android:name=".Principal">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -23,8 +23,9 @@
             android:label="@string/title_activity_lista_evento"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".EleitorDetalhe" />
-        <activity android:name=".ItemEleitor"></activity>
-
+        <activity android:name=".ItemEleitor" />
+        <activity android:name=".CandidatoDetalhe" />
+        <activity android:name=".ItemCandidato"></activity>
     </application>
 
 </manifest>
