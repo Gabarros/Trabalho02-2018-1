@@ -21,7 +21,13 @@ import model.Candidato;
 
 public class CandidatoDetalhe extends AppCompatActivity {
 
-   
+    EditText etNome, etNomePartido, etNumeroUrna, etCargo, etNumeroVotos, etEstado, etMunicipio2;
+
+    Button btsalvar,btalterar, btdeletar;
+
+    int id;
+    Candidato candidato;
+    private Realm realm;
 
 
     @RequiresApi(api = Build.VERSION_CODES.O)
