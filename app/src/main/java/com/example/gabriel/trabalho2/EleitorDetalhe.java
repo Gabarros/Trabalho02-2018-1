@@ -76,7 +76,7 @@ public class EleitorDetalhe extends AppCompatActivity {
             btdeletar.setVisibility(View.INVISIBLE);
 
         }
-        
+
         btsalvar.setOnClickListener( new View.OnClickListener(){
 
             @Override

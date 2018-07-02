@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardView"
     android:layout_width="375dp"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
     android:layout_margin="5dp"
     app:cardBackgroundColor="@android:color/darker_gray"
     app:cardCornerRadius="05dp"
@@ -11,58 +12,70 @@
     app:contentPadding="5dp">
 
     <android.support.constraint.ConstraintLayout
-        android:layout_width="362dp"
-        android:layout_height="wrap_content">
+        android:id="@+id/constraintLayout"
+        android:layout_width="360dp"
+        android:layout_height="134dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_conversion_absoluteHeight="114dp"
+        tools:layout_conversion_absoluteWidth="362dp">
 
         <TextView
             android:id="@+id/tvSecaoEleitor"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="8dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
             android:text="@string/secaoeleitor"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tvZonaEleitor" />
+            app:layout_constraintTop_toBottomOf="@+id/tvZonaEleitor"
+            tools:layout_conversion_absoluteHeight="19dp"
+            tools:layout_conversion_absoluteWidth="1dp" />
 
         <TextView
             android:id="@+id/tvNomeEleitor"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="8dp"
-            android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
             android:text="@string/nomeeleitor"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            tools:layout_conversion_absoluteHeight="19dp"
+            tools:layout_conversion_absoluteWidth="1dp" />
 
         <TextView
             android:id="@+id/tvNumeroEleitor"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="8dp"
-            android:layout_marginStart="8dp"
             android:layout_marginTop="8dp"
             android:text="@string/numeroeleitor"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tvNomeEleitor" />
+            app:layout_constraintTop_toBottomOf="@+id/tvNomeEleitor"
+            tools:layout_conversion_absoluteHeight="19dp"
+            tools:layout_conversion_absoluteWidth="1dp" />
 
         <TextView
             android:id="@+id/tvZonaEleitor"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="8dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="8dp"
             android:text="@string/zonaeleitor"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tvNumeroEleitor" />
+            app:layout_constraintTop_toBottomOf="@+id/tvNumeroEleitor"
+            tools:layout_conversion_absoluteHeight="19dp"
+            tools:layout_conversion_absoluteWidth="1dp"
+            tools:layout_editor_absoluteX="186dp"
+            tools:layout_editor_absoluteY="66dp" />
     </android.support.constraint.ConstraintLayout>
 
-</android.support.v7.widget.CardView>
+</android.support.constraint.ConstraintLayout>

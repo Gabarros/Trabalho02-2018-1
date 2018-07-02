@@ -13,7 +13,7 @@ import com.example.gabriel.trabalho2.R;
 
 public class Principal extends AppCompatActivity implements AdapterView.OnItemClickListener{
 
-    private String[] activities = {"Selecione a Opção:"};
+    private String[] activities = {"ListaEleitores"};
     private String[] itemMenu = {"Adicionar Eleitor"};
     private String[] itemMenu2 = {"Adicionar Candidato"};
 
