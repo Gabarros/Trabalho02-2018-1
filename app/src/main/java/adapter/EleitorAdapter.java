@@ -55,7 +55,10 @@ public class EleitorAdapter extends RecyclerView.Adapter {
     }
 
     @Override
-   
+    public int getItemCount() {
+
+        return eleitores.size();
+    }
 
 
     public class EleitorViewHolder extends RecyclerView.ViewHolder {
